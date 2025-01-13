@@ -1,0 +1,600 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    background-color: #BED9DD;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #73B3B2;
+    color: white;
+    padding-left: 10%;
+    padding-right: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: visible;
+    margin: 0%;
+}
+
+
+
+header #hamburger-icon img {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-right: 50%;
+    padding-right: 30px;
+}
+
+header #logo img {
+    position: absolute; 
+    bottom: -25%;
+    left: 15%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #73B3B2;
+    color: white;
+    padding-left: 10%;
+    padding-right: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: visible;
+    margin: 0%;
+}
+
+header #logo img {
+    position: absolute; 
+    bottom: -25%;
+    left: 15%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+} 
+
+header h1 {
+    background-color: #3C979F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 70px;
+    width: 115px;
+    height: 10px;
+    padding: 0 5px;
+    padding-bottom: 30px;
+    color: aliceblue;
+    font-family: 'Arima', sans-serif; 
+}
+
+li{
+    list-style: none;
+}
+
+.nav-item a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    position: fixed;
+    left: 100%;
+    top: 75px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #206267;
+    width: 30%;
+    text-align: center;
+    transition: 0.3s;
+    margin-left: 60%;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: #485150;
+}
+
+.hamburger{
+    position: static;
+    display: none;
+    cursor: pointer;
+    justify-self: right;
+    display: block;
+    margin-left: 25%;
+    padding-right: 10%;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(11, 10, 10);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active{
+    left: 0;
+}
+
+h1 {
+    text-align: left;
+    color: #00796b;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-family: 'Arima', sans-serif; 
+}
+
+section {
+    padding: 20px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.contact-info img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+}
+
+form input, form textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #004d40;
+    font-size: 1em;
+}
+
+.form textarea {
+    height: 70px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #004d40;
+}
+
+.form button {
+    padding: 5px 0px;
+    background-color: #3C979F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;   
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #115D5C; 
+}
+
+button:active {
+    background-color: #0c4241; 
+}
+
+
+footer {
+    background-color: #4db6ac;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer p {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+/* Media Queries */
+@media (max-width: 425px) {
+    .contact-info {
+        align-items: flex-start;
+    }
+
+    form input, form textarea {
+        width: 80%;
+    }
+}
+
+/* Mobile Landscape */
+@media (min-width: 426px) and (max-width: 800px) {
+    header #logo img {
+        position: absolute; 
+        bottom: -33%;
+        left: 15%;
+        transform: translateX(-50%);
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    } 
+
+    header h1 {
+        height: 15px;
+    }
+
+    .nav-menu{
+        margin-left: 65%;
+        top: 80px;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-info div {
+        max-width: 25%;
+    }
+
+    .contact-info p {
+        font-size: 10px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    
+    form div {
+        display: flex;
+        flex-direction: row;
+       
+    }
+    
+    form input, form textarea {
+        width: 250px;
+        height: 20px;
+        margin-left: 20px;
+        padding: 10px;
+        border: none;
+        color: #004d40;
+        font-size: 1em;
+    }
+    
+    .form textarea {
+        height: 40px;
+        width: 350px;
+    }
+    
+    .form button {
+        justify-self: flex-start;
+        margin-top: 15px;
+        width: 70px;
+        margin-left: 30px;
+    }
+}
+
+/* Tablet Portrait */
+@media (min-width: 801px) and (max-width: 1023px) {
+    header #logo img {
+        position: absolute; 
+        bottom: -40%;
+        left: 10%;
+        transform: translateX(-50%);
+        height: 88px;
+        width: 88px;
+        border-radius: 50%;
+    } 
+
+    header h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: -60%;
+        height: 25px;
+    }
+
+    .nav-menu{
+        margin-left: 67%;
+        top: 90px;
+    }
+
+
+   nav ul {
+       display: none;
+   }
+
+   .contact-info {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+   }
+
+    .contact-info div {
+    width: 300px;
+    margin: 20px;
+    }
+
+    .contact-info p {
+        font-size: 15px;
+        width: 150px;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    width: 100%;
+    margin: 20px;
+    flex-wrap: wrap;
+    }
+   
+    form input, form textarea {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 5px;
+   }
+   
+   .form textarea {
+    height: 90px;
+   }
+   
+   .form button {
+    padding: 0px;
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;   
+    margin-top: 20px;
+   }  
+}
+
+/* Tablet Landscape */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    header #logo img {
+        position: absolute; 
+        bottom: -48%;
+        left: 15%;
+        transform: translateX(-50%);
+        height: 88px;
+        width: 88px;
+        border-radius: 50%;
+    } 
+
+    header h1 {
+        height: 30px;
+        padding: 20 10px;
+    }
+
+    .nav-menu{
+        margin-left: 67%;
+        top: 90px;
+    }
+
+    header h1 {
+        background-color: #3C979F;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: -90%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 20px;
+        width: 90%;
+    }
+    
+    .contact-info div {
+        width: 300px;
+        margin: 20px;
+    }
+    
+    .contact-info p {
+        font-size: 15px;
+        width: 150px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+    
+    form div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    
+    form input, form textarea {
+        width: 350px;
+        height: 35px;
+        margin-left: 20px;
+        padding: 10px;
+        border: none;
+        color: #004d40;
+        font-size: 1em;
+    }
+    
+    .form textarea {
+        height: 70px;
+        width: 450px;
+    }
+    
+    .form button {
+        justify-self: flex-start;
+        margin-top: 30px;
+        width: 80px;
+        height: 40px;
+        margin-left: 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    header #logo img {
+        position: absolute; 
+        bottom: -50%;
+        left: 15%;
+        transform: translateX(-50%);
+        height: 95px;
+        width: 95px;
+        border-radius: 50%;
+    } 
+   
+    header h1 {
+        height: 30px;
+        padding: 20 10px;
+        margin-right: -300px;
+        margin-left:200px ;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static; 
+        left: 0; 
+        top: auto; 
+        flex-direction: row; 
+        width: auto; 
+        margin-right: 5%;
+        background-color: #73b3b2;
+    }
+
+    .nav-link { 
+        border-bottom: none;
+        display: inline-block; 
+        margin: 0 15px; 
+    }
+
+    .nav-item {
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+   
+    header h1 {
+        background-color: #3C979F;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: -50%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    section {
+        display: flex;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .form {
+        width: 80%;
+        margin-right: 50px;
+    }
+
+    form {
+        position: relative;
+    }
+
+    form input, form textarea {
+        width: 450px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        position: absolute;
+        top: 200px;
+        left: -200px;
+    }
+}
